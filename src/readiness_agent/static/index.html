@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Repo Readiness Agent</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">POLICY-GATED ENGINEERING AGENT</span><h1>Know what blocks the next release.</h1><p>Local repository evidence becomes a prioritized, inspectable plan. Nothing mutates without human approval.</p></header>
+    <section class="panel controls">
+      <label for="path">Repository path</label>
+      <div><input id="path" value="." autocomplete="off"><button id="audit">Run audit</button></div>
+      <small>Deterministic demo mode · secrets are detected locally and never displayed</small>
+    </section>
+    <section id="result" class="hidden">
+      <div class="score-card panel"><div><span class="eyebrow">READINESS SCORE</span><strong id="score">—</strong></div><div><h2 id="repo">Repository</h2><p id="meta"></p></div></div>
+      <div class="grid"><section class="panel"><h2>Evidence</h2><div id="findings"></div></section><section class="panel"><h2>Approval queue</h2><div id="actions"></div></section></div>
+      <section class="panel"><h2>Trace</h2><div id="trace" class="trace"></div></section>
+    </section>
+    <p id="error" role="alert"></p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
