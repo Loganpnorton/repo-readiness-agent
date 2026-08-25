@@ -4,6 +4,8 @@ A policy-gated engineering agent that turns repository evidence into a prioritiz
 
 ![Dashboard preview](docs/readiness-dashboard.png)
 
+[Watch the 75-second demo](docs/demo.mp4)
+
 > The default demo is deterministic and needs no API key. An optional OpenAI Responses API planner can produce schema-constrained action proposals; it still cannot bypass the approval policy.
 
 ## Why this exists
@@ -63,4 +65,3 @@ planner -> proposed actions -> policy gate -> approval queue
 ## License
 
 MIT. The scanner, policy layer, demo UI, and tests in this repository were created for this project.
-
